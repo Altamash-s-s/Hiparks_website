@@ -1,0 +1,1427 @@
+.park_sec {
+    padding:80px 0 52px 335px;
+    overflow:hidden;
+}
+
+.map_sec_name {
+    width: 60%;
+    margin-bottom: 25px;
+}
+.park_sec_hd {
+    margin-top: 21px;
+    margin-bottom:18px;
+}
+.map_dv {
+    position: relative;
+}
+.prk_wht  .slick-arrow  {
+    background-color: #fff;
+}
+
+.ncr_dv {
+    top: 195px;
+    left: 102px;
+}
+
+.ahmedabad_dv {
+    top: 312px;
+    left: 60px;
+}
+.ahmedabad_dv .sd_pin_box {
+    margin-right: 7px;
+}
+.mumbai_dv {
+    top: auto;
+    bottom: 245px;
+    left: 25px;
+    cursor: auto !important;
+}
+.indore_dv {
+    top: auto;
+    bottom: 343px;
+    left: 65px;
+    cursor: auto !important;
+}
+.nashik_dv {
+    top: auto;
+    bottom: 296px;
+    left: 39px;
+    cursor: auto !important; 
+}
+.pune_dv {
+    top: auto;
+    bottom: 218px;
+    left: 151px;
+    display: grid !important;
+}
+.pune_dv .sd_name_box {
+    margin-right: 0;
+    margin-top:4px;
+    transition: all 0.8s;
+}
+.goa_dv {
+    top: auto;
+    bottom: 160px;
+    left: 71px;
+}
+.bengaluru_dv {
+    top: auto;
+    bottom: 119px;
+    left: 100px;
+}
+.bengaluru_dv .sd_pin_box {
+    margin-right:6px;
+}
+
+.chennai_dv {
+    top: auto;
+    bottom: 103px;
+    left: auto;
+    right: 273px;
+    cursor: auto !important; 
+}
+.chennai_dv .sd_pin_box {
+    margin-right: 6px;
+}
+
+.hyderabad_dv {
+    top: auto;
+    bottom: 265px;
+    left: auto;
+    right: 267px;
+}
+.hyderabad_dv .sd_pin_box {
+    margin-right: 6px;
+}
+
+.nagpur_dv {
+    top: auto;
+    bottom: 320px;
+    left: 200px;
+}
+.nagpur_dv .sd_pin_box {
+    margin-right: 6px;
+}
+.kolkata_dv {
+    top: 318px;
+    right: 177px;
+    cursor: auto !important;
+}
+
+.state_dv {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity:0;
+    transform: scale(0);
+}
+.state_dv:hover .sd_pin_box {
+    transform: scale(1.6);
+    background: #F47920;
+} 
+.state_active {
+    transform: scale(1.6);
+    background: #F47920 !important;   
+}
+.state_active1 {
+    background: #F47920 !important; 
+}
+.state_dv:hover .park_no_dv , .state_dv:hover .sd_name_box {
+    background: #F47920;
+} 
+.state_dv:hover .sd_name_box {
+    z-index: 1;
+}
+.kolkata_dv:hover .sd_pin_box{
+    background: #313D47 ;
+    transform: scale(1);
+} 
+.kolkata_dv:hover .park_no_dv {
+    background: #313D47 ;
+}
+.kolkata_dv:hover .sd_name_box {
+    background: #A7ADB3;
+}
+.mumbai_dv:hover .sd_pin_box{
+    background: #313D47 ;
+    transform: scale(1);
+} 
+.mumbai_dv:hover .park_no_dv {
+    background: #313D47 ;
+}
+.mumbai_dv:hover .sd_name_box {
+    background: #A7ADB3;
+}
+
+.indore_dv:hover .sd_pin_box{
+    background: #313D47 ;
+    transform: scale(1);
+} 
+.indore_dv:hover .park_no_dv {
+    background: #313D47 ;
+}
+.indore_dv:hover .sd_name_box {
+    background: #A7ADB3;
+}
+
+.nashik_dv:hover .sd_pin_box{
+    background: #313D47 ;
+    transform: scale(1);
+} 
+.nashik_dv:hover .park_no_dv {
+    background: #313D47 ;
+}
+.nashik_dv:hover .sd_name_box {
+    background: #A7ADB3;
+}
+
+.chennai_dv:hover .sd_pin_box{
+    background: #313D47 ;
+    transform: scale(1);
+} 
+.chennai_dv:hover .park_no_dv {
+    background: #313D47 ;
+}
+.chennai_dv:hover .sd_name_box {
+    background: #A7ADB3;
+}
+ 
+/* .state_dv:hover .sd_pin_box img{
+    width: 10px;
+} */
+
+.sd_name_box {
+    background: #A7ADB3;
+    border-radius: 6px;
+    padding: 5px;
+    width: fit-content;
+    float: left;
+    margin-right: 7px;
+    transition: all 0.5s;
+}
+p.state_name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.sd_pin_box {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #313D47;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s;
+    animation: fadein 0.5s;
+    animation: pulse 1.5s infinite;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes pulse {
+    from { box-shadow: 0 0 0 0px #F47920; }
+    to { box-shadow: 0 0 0 11px rgba(0, 0, 0, 0); }
+}
+.sd_pin_box img{
+    width: 13px;
+}
+.park_no_dv {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background: #333d47;
+    border-radius: 50px;
+    padding: 4px;
+}
+.park_no {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 7px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+
+}
+.park_active_status_dv {
+    margin-top: 15px;
+}
+.park_active_status_dv div{
+    width: 100%;
+    float: left;
+}
+.park_active_status_dv  img {
+    margin-right:22px;
+    float: left;
+    width:fit-content;
+} 
+.park_active_status_dv  p {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #313D47;
+    width:fit-content;
+    float: left;
+}
+
+
+
+/*-------------------------------- Park Slider Col CSS start here */
+.park_slider_sub_dv {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.park_info_dv {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    float: left;
+}
+.park_slider_outer_dv {
+    float: left;
+    width: 100%;
+    margin-top:20px;
+}
+#div1 {
+    display: block;
+}
+.park_name_dv{
+    border-radius: 50px;
+    float: left;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.park_name {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26.64px;
+    text-transform: uppercase;
+    color: #fff;
+    width: fit-content;
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 35px;
+    background: #F47920;
+    padding: 15px 25px;
+    border-radius: 90px;
+}
+.park_status {
+    font-family: 'Barlow';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #313D47;
+    width: fit-content;
+    float: left;
+    margin-bottom: 0px;
+    margin-right:20px;
+
+}
+.park_status span {
+    font-weight: 700;
+}
+
+
+
+.park_main_slider .slick-list {
+    padding: 0 100px 0 0!important;
+    height:484px;
+}
+.park_main_slider .slick-slide.slick-active.slick-center.slick-current , .park_main_slider  .slick-slide.slick-active.slick-cloned{
+    opacity:1 ;
+    transition:all 0.8s;
+}
+
+.park_main_slider .slick-slide.slick-active.slick-center.slick-current + .slick-active{
+    opacity:0.3 ;
+    transition:all 0.8s;
+}
+.prk_content_dv {
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    height: 425px;
+    transition: all 0.5s;
+}
+.park_main_slider .slick-slide.slick-active .prk_content_dv:hover {
+    height: 475px;
+    margin-top: -22px;
+}
+.park_main_slider .slick-slide.slick-active .prk_content_dv:hover .arrow_circle   {
+    opacity:1;
+}
+.park_main_slider .slick-slide.slick-active .prk_content_dv:hover .prk_btn {
+    opacity:1;
+    display: block;
+}
+.park_sld {
+    padding-right: 30px;
+    padding-top:25px;
+}
+.prk_img_dv {
+    /* height: 190px; */
+    height: 44%;
+    position: relative;
+    transition: all 0.5s;
+}
+.prk_img_dv > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.patch_dv {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #313D47;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: fit-content;
+}
+.patch_dv p {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom:0px;
+}
+.arrow_circle {
+    position: absolute;
+    width:50px;
+    height:50px;
+    background-color: #F47920;
+    border-radius:50px;
+    top: auto;
+    bottom:-25px;
+    right:20px;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+    transition: all 0.5s;
+}
+.arrow_circle > img {
+    width: 15px;
+}
+.prk_inner_content {
+    border: 1px solid #DDDDDD;
+    border-top: 0px;
+    padding: 20px 20px 0px 20px;
+    float: left;
+    background-color:#fff;
+    transition: all 0.5s;
+    /* height:235px; */
+    height:55.5%;
+    width:100%;
+}
+.prk_cnt_vlu {
+    float: left;
+    width: 50%;
+    overflow-wrap: break-word;
+}
+.prk_cnt_vlu p {
+    width: 100% !important;
+    text-align: end;
+    display: block !important;
+}
+.prk_cnt_hd {
+    width: 50%;
+    float: left;
+}
+.prk_cnt_hd p {
+    width: 100% !important;
+}
+.park_main_slider .slick-slide.slick-active .prk_content_dv:hover .prk_inner_content {
+    padding-bottom: 25px;
+}
+p.prk_name {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #313D47;
+}
+.prk_dv_1{
+    width: 100%;
+    float: left;
+}
+p.area_hd , .potential_hd , .usage_hd{
+    color: #989EA4;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: fit-content;
+    float: left;
+    
+}
+p.area_vlu , .potential_hd_vlu ,.usage_hd_vlu{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #313D47;
+    width: fit-content;
+    float: right;
+}
+.usage_hd_vlu {
+    float: right;
+    margin-bottom:0px;
+    transition: all 0.5s;
+}
+.usage_hd{
+    width: 25%;
+}
+.park_main_slider .slick-slide.slick-active .prk_content_dv:hover .usage_hd_vlu {
+    padding-bottom: 10px;
+}
+.prk_btn {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F47920;
+    float: left;
+    margin-top: 6px;
+    opacity:0;
+    /* display: none; */
+    transition: all 0.8s;
+    width:100%;
+}
+.prk_btn:hover {
+    color: #F47920;
+}
+.park_info_dv .slick-prev {
+    left: -87px !important;
+    z-index: 1 !important;
+    bottom: 100px;
+    top: auto !important;
+}
+.park_info_dv .slick-next {
+    left: -87px !important;
+    z-index: 1 !important;
+    bottom:25px;
+    top: auto !important;
+}
+
+/*-------------------------------- Park Slider Col CSS end here */
+
+
+.park_dp_div {
+    display: none;
+}
+
+
+#div2 .slick-track , #div5 .slick-track , #div8 .slick-track {
+    margin: 0;
+}
+#div2 .slick-slide.slick-active.slick-cloned  , #div5 .slick-slide.slick-active.slick-cloned , #div8 .slick-slide.slick-active.slick-cloned {
+    display:none;
+}
+#div7 .slick-track ,#div4 .slick-track {
+    margin: 0;
+}
+#div7 .slick-slide.slick-active.slick-cloned ,#div7 .slick-slide.slick-cloned ,
+#div4 .slick-slide.slick-active.slick-cloned ,#div4 .slick-slide.slick-cloned
+{
+    display:none;
+}
+
+.park_inner_dv hr {
+    border-bottom: 1px dashed #2BB04C;
+}
+.map_sec_name {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0px;
+}
+
+.park_main_slider .slick-list {
+    transform: translateX(100%);
+    transition: transform .9s ease .8s;
+}
+
+.remov-trnsfrm {
+    transform: none !important;
+}
+.mobile_prk_dv {
+    display: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media only screen and (min-device-width: 1270px) and (max-device-width: 1280px) {
+    .park_sec {
+        padding-left:30px;
+    }
+    /* .park_name_dv {
+        width: 73%;
+    } */
+    .park_name {
+        margin-right: 16px;
+    }
+
+    .kolkata_dv {
+        right: 40px;
+    }
+    .nagpur_dv {
+        left: 215px;
+    }
+    .hyderabad_dv {
+        right: 125px;
+    }
+    .chennai_dv {
+        right: 135px;
+    }
+}
+
+@media only screen and (min-device-width: 1360px) and (max-device-width: 1369px) {
+    .park_sec {
+        padding-left:60px;
+    }
+    /* .park_name_dv {
+        width: 70%;
+    } */
+    .park_name {
+        margin-right: 16px;
+    }
+
+    .kolkata_dv {
+        right: 60px;
+    }
+    .nagpur_dv {
+        left: 208px;
+    }
+    .hyderabad_dv {
+        right: 140px;
+    }
+    .chennai_dv {
+        right: 150px;
+    }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1440px) {
+    .park_sec {
+        padding-left:95px;
+    }
+    /* .park_name_dv {
+        width: 68%;
+    } */
+    .park_name {
+        margin-right: 16px;
+    }
+
+
+    .kolkata_dv {
+        right: 75px;
+    }
+    .nagpur_dv {
+        left: 213px;
+    }
+    .hyderabad_dv {
+        right: 155px;
+    }
+    .chennai_dv {
+        right: 176px;
+    }
+}
+
+@media only screen and (min-device-width: 1441px) and (max-device-width: 1499px) {
+    .park_sec {
+        padding-left:40px;
+    }
+    /* .park_name_dv {
+        width: 68%;
+    } */
+    /* .park_name {
+        margin-right: 16px;
+    } */
+
+
+    .kolkata_dv {
+        right: 113px;
+    }
+    
+    .hyderabad_dv {
+        right: 184px;
+    }
+    .chennai_dv {
+        right: 217px;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 1580px) and (max-device-width: 1600px) {
+    .park_sec {
+        padding-left:75px;
+    }
+    /* .park_name_dv {
+        width: 64%;
+    } */
+    .park_info_dv .slick-prev , .park_info_dv .slick-next {
+        background-color:#fff;
+    }
+
+    .kolkata_dv {
+        right: 155px;
+    }
+    .nagpur_dv {
+        left: 211px;
+    }
+    .hyderabad_dv {
+        right: 190px;
+    }
+    .chennai_dv {
+        right: 245px;
+    }
+}
+
+@media only screen and (min-device-width: 1601px) and (max-device-width: 1669px) {
+    .park_sec {
+        padding-left:114px;
+    }
+    /* .park_name_dv {
+        width: 64%;
+    } */
+    /* .park_info_dv .slick-prev , .park_info_dv .slick-next {
+        background-color:#fff;
+    } */
+
+    .kolkata_dv {
+        right: 155px;
+    }
+    .nagpur_dv {
+        left: 211px;
+    }
+    .hyderabad_dv {
+        right: 190px;
+    }
+    .chennai_dv {
+        right: 255px;
+    }
+}
+
+@media only screen and (min-device-width: 1670px) and (max-device-width: 1700px) {
+    .park_sec {
+        padding-left:114px;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 1701px) and (max-device-width: 1740px) {
+    .park_sec {
+        padding-left:237px;
+    }
+
+    .kolkata_dv {
+        right: 130px;
+    }
+ 
+    .hyderabad_dv {
+        right: 221px;
+    }
+    .chennai_dv {
+        right: 233px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1741px) and (max-device-width: 1799px) {
+    .park_sec {
+        padding-left:237px;
+    }
+
+    .hyderabad_dv {
+        right: 263px;
+    }
+
+    .kolkata_dv {
+        right: 175px;
+    }
+
+    .chennai_dv {
+        right: 255px;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1840px) {
+    .park_sec {
+        padding-left: 287px;
+    }
+
+    .kolkata_dv {
+        right: 152px;
+    }
+
+    .hyderabad_dv {
+        right: 245px;
+    }
+
+    .chennai_dv {
+        right: 263px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1841px) and (max-device-width: 1899px) {
+
+    .park_sec {
+        padding-left: 296px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1536px) {
+    .hyderabad_dv {
+        right: 170px;
+    }
+    .kolkata_dv {
+        right: 95px;
+    }
+    .park_sec {
+        padding-left:130px;
+    }
+    .chennai_dv {
+        right: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 1536px) and (max-device-width: 1579px) {
+    .hyderabad_dv {
+        right: 170px;
+    }
+    .kolkata_dv {
+        right: 95px;
+    }
+    .park_sec {
+        padding-left:160px;
+    }
+    .chennai_dv {
+        right: 200px;
+    }
+}
+
+
+
+/*---------------------------------------------------------------- Mobile CSS */
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+
+
+
+
+
+
+    .mob_hide {
+        display: none;
+    }
+    .mobile_prk_dv {
+        display: block;
+    }
+
+    #div7 .slick-slide.slick-active.slick-cloned ,#div7 .slick-slide.slick-cloned ,
+    #div4 .slick-slide.slick-active.slick-cloned ,#div4 .slick-slide.slick-cloned
+    {
+        display:block;
+    }
+    
+    .park_sec {
+        padding: 70px 0 52px 20px;
+        height: 1450px;
+    }
+    .map_dv {
+        position: relative;
+        float: left;
+    }
+    .map_sec_name {
+        width: 94%;
+    }
+    .park_map_col {
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+    .state_active {
+        transform: scale(1.3) !important;
+    }
+    img.map_img {
+        width: 435px;
+    }
+    
+    p.state_name {
+        font-size: 9px;
+        line-height: 8px;
+    }
+    .sd_name_box {
+        margin-top:4px;
+    }
+    .sd_pin_box {
+        width: 25px;
+        height: 25px;
+    }
+    .sd_pin_box img {
+        width: 8px;
+    }
+    .park_no_dv {
+        width: 15px;
+        height: 15px;
+    }
+    .park_no {
+        font-weight: 300;
+        font-size: 7px;
+        line-height: 5px;
+    }
+    .ncr_dv {
+        top: 124px;
+        left: 55px;
+    }
+    .ahmedabad_dv {
+        top: 207px;
+        left: 33px;    
+    }
+    .indore_dv {
+        top: 245px;
+        left: 35px;
+    }
+    .nashik_dv {
+        top: 278px;
+        left: 25px;
+    }
+    .mumbai_dv {
+        bottom: 261px;
+        left: 13px;
+    }
+    .pune_dv {
+        bottom: 220px;
+        left: 110px;
+    }
+    .goa_dv {
+        bottom: 207px;
+        left: 41px;
+    }
+    .bengaluru_dv {
+        bottom: 178px;
+        left: 56px;
+    }
+    .hyderabad_dv {
+        bottom: 275px;
+        right: auto;
+        left: 170px;
+    }
+    .chennai_dv {
+        right: auto;
+        left: 160px;
+        bottom: 156px;
+    }
+    .nagpur_dv {
+        bottom: 317px;
+        left: 133px;
+    }
+    .kolkata_dv {
+        top: 216px;
+        right: auto;
+        left: 230px;
+    }
+    .park_active_status_dv p {
+        font-size: 13px;
+        margin-bottom: 11px;
+    }
+    .park_active_status_dv img {
+        margin-right: 10px;
+        width: 19px;
+        margin-top: 1px;
+    }
+
+
+    .park_slider_col {
+        padding-left: 0;
+    }
+    .park_dp_div {
+        display: none;
+    }
+    .park_main_slider .slick-list {
+        padding: 0 50px 0 0!important;
+        height: 480px;
+    }
+    .park_info_dv .slick-prev {
+        left: 0 !important;
+        z-index: 1 !important;
+        bottom: -50px;
+        top: auto !important;
+    }
+    .park_info_dv .slick-next {
+        left: 55px !important;
+        z-index: 1 !important;
+        bottom: -50px;
+        top: auto !important;
+    }
+    .park_status {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .park_name {
+        display: none;
+    }
+    .park_dp_div {
+        float: left;
+        width: fit-content;
+        margin-top: 20px;
+        position: relative;
+    }
+    .park_dp_div::before {
+        position: absolute;
+        top: 17px;
+        right: 9px;
+        content: '';
+        background-image:url('../img/svg/down_arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 8px;
+        z-index: 1;
+    }
+    select#park_dropdown {
+        height:40px;
+        background-color:#F47920 ;
+        color:#fff !important;
+        border-radius: 90px;
+        width:100%;
+        font-family: 'Barlow';
+        border-color: #F47920;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-image:url('../img/svg/mob_prk_pin.svg');
+        background-repeat: no-repeat;
+        background-size: 23px;
+        background-position: 10px;
+        appearance: none;
+        position: relative;
+    }
+    select#park_dropdown:focus-visible{
+        outline-color: #F47920;
+    }
+    select#park_dropdown:focus {
+        background-color:#F47920 !important;
+        color:#fff !important;
+    }
+    #park_dropdown option {
+        color: #000 !important;
+    }
+    
+}
+
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1023px) {
+
+    #div2 .slick-slide.slick-cloned , #div5 .slick-slide.slick-cloned{
+        display: none;
+    }
+    /* .mob_hide {
+        display: none;
+    } */
+    .mobile_prk_dv {
+        display: block;
+        visibility: hidden;
+    }
+    .park_name_dv {
+        display: grid;
+    }
+    .park_name {
+        font-size: 19px;
+        padding: 9px 20px;
+        margin-bottom: 10px;
+    }
+    .park_status {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .map_dv {
+        position: relative;
+        float: left;
+    }
+    img.map_img {
+        width: 450px;
+    }
+    .state_active {
+        transform: scale(1.3) !important;
+    }
+    p.state_name {
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .sd_name_box {
+        margin-top:4px;
+    }
+    .sd_pin_box {
+        width: 27px;
+        height: 27px;
+    }
+    .sd_pin_box img {
+        width: 11px;
+    }
+    .park_no_dv {
+        width: 15px;
+        height: 15px;
+    }
+    .park_no {
+        font-weight: 300;
+        font-size: 7px;
+        line-height: 5px;
+    }
+
+    .ncr_dv {
+        top: 124px;
+        left: 55px;
+    }
+    .ahmedabad_dv {
+        top: 207px;
+        left: 33px;    
+    }
+    .indore_dv {
+        top: 244px;
+        left: 35px;
+    }
+    .nashik_dv {
+        top: 279px;
+        left: 25px;
+    }
+    .mumbai_dv {
+        bottom: 287px;
+        left: 13px;
+    }
+    .pune_dv {
+        bottom: 250px;
+        left: 110px;
+    }
+    .goa_dv {
+        bottom: 225px;
+        left: 41px;
+    }
+    .bengaluru_dv {
+        bottom: 200px;
+        left: 56px;
+    }
+    .hyderabad_dv {
+        bottom: 298px;
+        right: auto;
+        left: 170px;
+    }
+    .chennai_dv {
+        right: auto;
+        left: 164px;
+        bottom: 181px;
+    }
+    .nagpur_dv {
+        bottom: 338px;
+        left: 133px;
+    }
+    .kolkata_dv {
+        top: 225px;
+        right: auto;
+        left: 230px;
+    }
+    .park_active_status_dv p {
+        font-size: 13px;
+    }
+    .park_active_status_dv img {
+        margin-right: 10px;
+    }    
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) {
+    
+    .park_sec {
+        padding-left:30px;
+        height: 900px;
+    }
+
+    .map_dv {
+        position: relative;
+        float: left;
+    }
+    /* img.map_img {
+        width: 450px;
+    } */
+    .state_active {
+        transform: scale(1.3) !important;
+    }
+    p.state_name {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .sd_name_box {
+        margin-top:4px;
+    }
+    .sd_pin_box {
+        width: 40px;
+        height: 40px;
+    }
+    .sd_pin_box img {
+        width: 14px;
+    }
+    .park_no_dv {
+        width: 18px;
+        height: 18px;
+    }
+    .park_no {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 8px;
+    }
+
+    .ncr_dv {
+        top: 170px;
+        left: 100px;
+    }
+    .ahmedabad_dv {
+        top: 303px;
+        left: 50px; 
+    }
+    .indore_dv {
+        top: 350px;
+        left: 60px;
+    }
+    .nashik_dv {
+        top: 398px;
+        left: 50px; 
+    }
+    .mumbai_dv {
+        bottom: 370px;
+        left: 33px;    
+    }
+    .pune_dv {
+        bottom: 319px;
+        left: 160px;
+    }
+    .goa_dv {
+        bottom: 277px;
+        left: 71px;
+    }
+    .bengaluru_dv {
+        bottom: 239px;
+        left: 104px;
+    }
+    .hyderabad_dv {
+        bottom: 389px;
+        right: auto;
+        left: 258px;
+    }
+    .chennai_dv {
+        right: auto;
+        left: 238px;
+        bottom: 220px;
+    }
+    .nagpur_dv {
+        bottom: auto;
+        left: 200px;
+        top: 382px;
+    }
+    .kolkata_dv {
+        top: 318px;
+        right: auto;
+        left: 356px;
+    }
+
+    
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .arrow_circle {
+        opacity: 1;
+    }
+
+    .prk_btn {
+        opacity: 1;
+        display: block;
+    }
+    .park_main_slider .slick-list {
+        transform: none;
+    }
+    
+}
+
+/*---------------------------------------------------------------- Snap Scroller CSS */
+@media only screen and (min-width: 1280px) and (max-width: 1440px) and (max-height: 768px) {
+
+    .park_sec {
+        padding-top:40px;
+        padding-bottom:20px;
+    }
+    .map_dv {
+        transform: scale(0.85);
+    }
+    
+
+}
+
+/*---------------------------------------------------------------- Tab Screen 1 CSS */
+@media only screen and (min-device-width: 601px) and (max-device-width: 1023px) {
+
+    .park_sec {
+        padding: 60px 0 52px 25px;
+    }
+
+
+    .park_dp_div {
+        float: left;
+        width:25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .park_dp_div::before {
+        position: absolute;
+        top: 17px;
+        right: 15px;
+        content: '';
+        background-image:url('../img/svg/down_arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 8px;
+        z-index: 1;
+    }
+    select#park_dropdown {
+        height:40px;
+        background-color:#F47920 ;
+        color:#fff !important;
+        border-radius: 90px;
+        width: 100%;
+        font-family: 'Barlow';
+        border-color: #F47920;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-image:url('../img/svg/mob_prk_pin.svg');
+        background-repeat: no-repeat;
+        background-size: 23px;
+        background-position: 10px;
+        appearance: none;
+    }
+    select#park_dropdown:focus {
+        background-color:#F47920 !important;
+        color:#fff !important;
+    }
+    select#park_dropdown:focus-visible{
+        outline-color: #F47920;
+    }
+    #park_dropdown option {
+        color: #000 !important; 
+    }
+    .park_info_dv .slick-prev {
+        left: 0px !important;
+        bottom: -70px;
+    }
+    .park_info_dv .slick-next {
+        left: 65px !important;
+        bottom: -70px;
+    }
+    #div7 .slick-slide.slick-active.slick-cloned ,#div7 .slick-slide.slick-cloned ,
+    #div4 .slick-slide.slick-active.slick-cloned ,#div4 .slick-slide.slick-cloned
+    {
+        display:block;
+    }
+    
+}
+
+/*---------------------------------------------------------------- Tab Screen 2 CSS */
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+
+    .park_sec {
+        padding-bottom:64px;
+    }
+    .map_dv {
+        position: relative;
+        transform: scale(0.8);
+        margin-left: -65px;
+    }
+    .hyderabad_dv {
+        right: 65px;
+    }
+    .prk_inner_content {
+        padding: 20px 15px 0px 15px;
+    }
+    .park_name {
+        font-size: 20px;
+        line-height: 26.64px;
+        padding: 10px 20px;
+    }
+    p.prk_name {
+        font-size: 21px;
+        line-height: 22px;
+    }
+    p.area_vlu, .potential_hd_vlu, .usage_hd_vlu {
+        font-size: 15px;
+    }
+    p.area_hd, .potential_hd, .usage_hd {
+        font-size: 15px;
+    }
+    .prk_btn {
+        font-size: 14px;
+    }
+    .patch_dv {
+        top: 15px;
+        right: 15px;
+    }
+    .patch_dv p {
+        font-size: 11px;
+    }
+    .arrow_circle {
+        width: 40px;
+        height: 40px;
+        bottom: -20px;
+    }
+}
+
+

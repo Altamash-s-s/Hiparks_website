@@ -1,0 +1,10 @@
+.news_thumb_desc{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 17px;
+    color: #313D47;
+    line-height: 25px;
+}
+.media_sec .media_tab{
+    margin-top: 0;
+}
